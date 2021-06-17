@@ -30,7 +30,7 @@ function drawFood(){
     context.fillRect(food.x, food.y, box, box);
 }
 
-document.addEventListener('Keydown', update);
+document.addEventListener('keydown', update);
 
 function update(event){
     if(event.keyCode == 37 && direction != "right") direction = "left";
