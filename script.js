@@ -6,6 +6,7 @@ snake[0] = {
     x: 8 * box,
     y: 8 * box
 }
+let score = 1;
 
 let direction = "right";
 let food = {
@@ -50,7 +51,8 @@ function iniciarJogo() {
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
             clearInterval(jogo);
             alert('Game Over :(');
-        }
+            reset();
+        }  
     }
 
     criarBG();
@@ -59,6 +61,7 @@ function iniciarJogo() {
 
     let snakeX = snake[0].x; 
     let snakeY = snake[0].y;
+
 
     if(direction == "right") snakeX += box;
     if(direction == "left") snakeX -= box;
@@ -70,6 +73,8 @@ function iniciarJogo() {
     }      
     else{food.x = Math.floor(Math.random() * 15 + 1) * box;
          food.y = Math.floor(Math.random() * 15 + 1) * box;
+         document.getElementById("score").innerHTML = score++;
+         
     }
     
 

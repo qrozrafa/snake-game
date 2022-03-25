@@ -6,16 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="favicon.png"> <!-- 17x17 pixels -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 
     <title>Snake Game</title>
 </head>
 
 <body>
-    <h1>SNAKE GAME!</h1>
-    <canvas id="snake" width="512" height="512">
+    <div class="game-box">
+        <div class="info">
+            <div class="box-title">
+                <img class="img-snake" src="favicon.png" alt="">
+                <h1 class="title">Snake game</h1>
+            </div>
+            <div class="box-score">
+                <img class="img-box" src="box (2).png" alt="">
+                <h1 id="score">0</h1>
+            </div>
+        </div>
+        <canvas id="snake" width="512" height="512">
 
-    </canvas>
+        </canvas>
+    </div>
 </body>
 
 

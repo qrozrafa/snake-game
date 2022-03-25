@@ -5,6 +5,74 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgb(44,139,44);
+    background-color: #77717167;,
+     
+}
+
+canvas{
+    filter: none !important;
+    border: solid #3a3939;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    filter: none !important;
+    background-color: rgba(187, 186, 186, 0.479);
+    border-radius: 25px 25px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    padding: 8px;
     
+}
+
+h1{
+    width: 30%;
+    padding: 20px;
+    color: rgb(255, 253, 253);
+    filter: drop-shadow(0 0 .20rem #ededed);
+    filter: none !important;
+}
+
+.box-title{
+    display: flex;
+    justify-content: center;
+    border-right: solid #000;
+}
+
+.img-snake{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 45px;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    color: aquamarine;
+}
+
+.box-score{
+    display: flex;
+    justify-content: center;
+}
+
+.img-box{
+    width: 31px;
+    height: 31px;
+    padding: 8px;
+    margin-top: 50px;
+}
+
+#score{
+    margin-top: 33px;
+}
+
+.game-box{
+    background-color: rgba(187, 186, 186, 0.479);
+    border: solid rgb(58, 57, 57);
+    border-radius: 25px;
+    padding: 20px;
+    filter: drop-shadow(0 0 .40rem);
 }
