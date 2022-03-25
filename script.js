@@ -87,3 +87,16 @@ function iniciarJogo() {
 }
 
 let jogo = setInterval(iniciarJogo, 100);
+
+
+/* =======  SCROLL REVEAL ANIMATION =======*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal('.game-box',{
+    interval: 200
+});
